@@ -1,0 +1,82 @@
+:root{
+    --cor-primaria: #2575fc;
+    --cor-secundaria: #fa3333;
+    --espacamento: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    font-family: arial,sans;
+}
+
+.cabecalho{
+    color:yellow;
+    background: var(--cor-primaria);
+    background: linear-gradient(135deg, #6a11cb, #8ba2c9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacamento);
+}
+
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menu a{
+    color: rgb(252, 255, 240);
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    background: rgba(111, 255, 0, 0.2);
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:var(--espacamento);
+    padding:var(--espacamento);  
+}
+
+.card{
+    background:ghostwhite;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.rodape {
+    background: linear-gradient(135deg, #1e293b, #5672b6);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+
+.formulario{
+    padding: var(--espacamento);
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    background: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
